@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+    font-size: 14px;
+    font-family: Charter;
+    color: #333;
+    background: #B3E5FC;
+    z-index: 1;
+}
+header {
+    height: 64px;
+    background: #4FC3F7;
+    z-index: 10;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 4px 6px rgb(63, 158, 202);
+}
+.head-title {
+    margin: 0;
+    text-align: center;
+    line-height: 60px;
+    letter-spacing: 0.8;
+}
+nav {
+    list-style: none;
+    text-align: center;
+    position: fixed;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    margin-left: -300px;
+    background: #E1F5FE;
+}
+.menu {
+    font-size: 36px;
+    position: absolute;
+    left: 20px;
+    top: 14px;
+    color: #FF6D00;
+}
+
+/* ---------------------------------- */
+.user-container {
+    width: 90%;
+    height: 680px;
+    background: #E1F5FE;
+    margin: 36px auto;
+    border-radius: 4px;
+    box-shadow: 0 6px 6px rgb(63, 158, 202);
+}
+.skills-container {
+    width: 90%;
+    height: 380px;
+    background: #E1F5FE;
+    margin: 36px auto;
+    border-radius: 4px;
+    box-shadow: 0 6px 6px rgb(63, 158, 202);
+}
+.works-container {
+    width: 90%;
+    height: 380px;
+    background: #E1F5FE;
+    margin: 36px auto;
+    border-radius: 4px;
+    box-shadow: 0 6px 6px rgb(63, 158, 202);
+}
+.contacts-container {
+    width: 98%;
+    height: 520px;
+    background: #E1F5FE;
+    /* margin: 36px auto; */
+    border-radius: 4px;
+    /* box-shadow: 0 6px 6px rgb(63, 158, 202); */
+}
+.backimage {
+    width: 100%;
+    height: 180px;
+}
+.usericon {
+    width: 120px;
+    height: 115px;
+    border-radius: 50%;
+    position: absolute;
+    left:34%;
+    top: 26%;
+    border: 2px solid #333
+}
+.information {
+    font-weight: bold;
+    font-size: 18px;
+}
+p {
+    margin: 0;
+}
+.user-information {
+    margin: 42px 0 0 20px;
+}
+.fab {
+    font-size: 36px;
+}
+.tag {
+    margin: 2px 0 2px 0;
+}
+.repository-area {
+    margin: 10px 0 0 0;
+}
+.github {
+    color: #333;
+    margin: 0 10px 0 0;
+}
+.gitlub {
+    color: #FF6D00;
+}
+.career-area {
+    width: 90%;
+    height: 100px;
+    border: 3px solid #333;
+    margin: 20px auto 0 auto;
+    border-radius: 6px;
+}
+.vision-area {
+    width: 90%;
+    height: 100px;
+    border: 3px solid #333;
+    margin: 10px auto 0 auto;
+    border-radius: 6px;
+}
+.c-title {
+    padding: 4px 0 0 4px;
+    font-weight: bold;
+}
+.tx {
+    text-align: left;
+    padding: 4px;
+
+}
+.skills-title {
+    text-align: center;
+    padding: 30px 0 10px 0;
+    font-size: 28px;
+}
+.contacts-title {
+    text-align: center;
+    padding: 30px 0 10px 0;
+    font-size: 28px;
+}
+.frontend-area {
+    display: flex;
+    border-bottom: 1px solid #FF9100
+    ;
+    width: 40%;
+    margin: 0 auto;
+}
+.backend-area {
+    display: flex;
+    border-bottom: 1px solid #FF9100
+    ;
+    width: 40%;
+    margin: 30px auto 0 auto;
+}
+.version-area {
+    display: flex;
+    border-bottom: 1px solid #FF9100
+    ;
+    width: 60%;
+    margin: 30px auto 0 auto;
+}
+.others-area {
+    display: flex;
+    border-bottom: 1px solid #FF9100
+    ;
+    width: 40%;
+    margin: 30px auto 0 auto;
+}
+.frontend-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 16px 0;
+}
+.backend-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 16px 0;
+}
+.version-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 16px 0;
+}
+.others-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 16px 0;
+}
+.fa-caret-down {
+    padding: 0 20px 0 0;
+    font-size: 24px;
+}
+.frontend-slide {
+    display: none;
+}
+.backend-slide {
+    display: none;
+}
+.version-slide {
+    display: none;
+}
+.others-slide {
+    display: none;
+}
+.skill-icon {
+    width: 60px;
+    height: 60px;
+    padding: 20px 0 0 10px;
+}
+.html-css-area {
+    display: flex;
+    margin: 10px 0 0 0;
+}
+.skill-tx {
+    padding: 16px 16px 10px 16px;
+}
+.border {
+    width: 80%;
+    border: 1px solid rgb(206, 204, 204);
+}
+form {
+    text-align: center;
+}
+.form-tag {
+    padding: 0 110px 0 0 ;
+}
+.form-name {
+    font-size: 18px;
+    margin: 10px 0 10px 0;
+}
+.form-email {
+    font-size: 18px;
+    margin: 10px 0 10px 0;
+}
+.form-text {
+    margin: 10px 0 10px 0;
+}
+.send {
+    width: 120px;
+    height: 40px;
+    background:#FF9100;
+    color: #ddd;
+    border: none;
+    font-size: 18px;
+    margin: 10px 0 0 0;
+    box-shadow: 0 6px 6px #FF6D00;
+}
