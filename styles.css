@@ -1,15 +1,15 @@
+
 body {
     margin: 0;
     font-size: 14px;
     font-family: Charter;
     color: #333;
     background: #B3E5FC;
-    z-index: 1;
 }
 header {
     height: 64px;
     background: #4FC3F7;
-    z-index: 10;
+    z-index: 5;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -21,58 +21,101 @@ header {
     line-height: 60px;
     letter-spacing: 0.8;
 }
-nav {
+ul {
     list-style: none;
-    text-align: center;
+    padding:0;
+}
+a {
+    text-decoration: none;
+}
+.overlay {
+    content: '';
+    visibility: hidden;
     position: fixed;
-    position: absolute;
-    z-index: 100;
     top: 0;
-    bottom: 0;
-    width: 300px;
-    margin-left: -300px;
-    background: #E1F5FE;
-}
-.menu {
-    font-size: 36px;
-    position: absolute;
-    left: 20px;
-    top: 14px;
-    color: #FF6D00;
-}
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0);
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    z-index: 3;
+  }
+  .overlay::after {
+    visibility: hidden;
+    position: fixed;
+    top: 40%;
+    left: 0;
+    display: block;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+  .side-open .overlay {
+    visibility: visible;
+    cursor: pointer;
+    background: rgba(0,0,0,.7);
+  }
+  .side-open .overlay::after {
+    visibility: visible;
+    color: rgba(255,255,255,.8);
+  }
 
-/* ---------------------------------- */
-.user-container {
+  .side-menu {
+    position: fixed;
+    top: 30%;
+    right: 25%;
+    height: 100%;
+    z-index: 1;
+  }
+  .menu-link {
+      color: #333;
+      font-size: 16px;
+      text-align: center;
+  }
+  li {
+    padding: 20px 0;
+  }
+  .side-menu-btn {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 4;
+    color: #FF6D00;
+    font-size: 36px;
+  }
+
+
+  /* メインコンテンツ */
+  .wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    z-index: 2;
+  }
+
+  /* サイドメニューオープン */
+  .side-open .wrapper,
+  .side-open .overlay {
+    -webkit-transform: translate3d(-300px, 0, 0);
+    transform: translate3d(-300px, 0, 0);
+  }
+
+
+  .user-container {
     width: 90%;
     height: 680px;
     background: #E1F5FE;
     margin: 36px auto;
     border-radius: 4px;
     box-shadow: 0 6px 6px rgb(63, 158, 202);
-}
-.skills-container {
-    width: 90%;
-    height: 380px;
-    background: #E1F5FE;
-    margin: 36px auto;
-    border-radius: 4px;
-    box-shadow: 0 6px 6px rgb(63, 158, 202);
-}
-.works-container {
-    width: 90%;
-    height: 380px;
-    background: #E1F5FE;
-    margin: 36px auto;
-    border-radius: 4px;
-    box-shadow: 0 6px 6px rgb(63, 158, 202);
-}
-.contacts-container {
-    width: 98%;
-    height: 520px;
-    background: #E1F5FE;
-    /* margin: 36px auto; */
-    border-radius: 4px;
-    /* box-shadow: 0 6px 6px rgb(63, 158, 202); */
+
 }
 .backimage {
     width: 100%;
@@ -84,7 +127,7 @@ nav {
     border-radius: 50%;
     position: absolute;
     left:34%;
-    top: 26%;
+    top: 9%;
     border: 2px solid #333
 }
 .information {
@@ -116,14 +159,14 @@ p {
 .career-area {
     width: 90%;
     height: 100px;
-    border: 3px solid #333;
+    border: 2px solid #333;
     margin: 20px auto 0 auto;
     border-radius: 6px;
 }
 .vision-area {
     width: 90%;
     height: 100px;
-    border: 3px solid #333;
+    border: 2px solid #333;
     margin: 10px auto 0 auto;
     border-radius: 6px;
 }
@@ -136,6 +179,29 @@ p {
     padding: 4px;
 
 }
+.skills-container {
+    width: 90%;
+    height: 380px;
+    background: #E1F5FE;
+    margin: 36px auto;
+    border-radius: 4px;
+    box-shadow: 0 6px 6px rgb(63, 158, 202);
+}
+.works-container {
+    width: 90%;
+    height: 380px;
+    background: #E1F5FE;
+    margin: 36px auto;
+    border-radius: 4px;
+    box-shadow: 0 6px 6px rgb(63, 158, 202);
+}
+.contacts-container {
+    width: 98%;
+    height: 580px;
+    background: #E1F5FE;
+    border-radius: 4px;
+}
+
 .skills-title {
     text-align: center;
     padding: 30px 0 10px 0;
@@ -230,18 +296,22 @@ form {
     text-align: center;
 }
 .form-tag {
-    padding: 0 110px 0 0 ;
+    padding: 0 160px 0 0 ;
 }
 .form-name {
     font-size: 18px;
-    margin: 10px 0 10px 0;
+    margin: 20px 0 16px 0;
+    width: 70%;
 }
 .form-email {
     font-size: 18px;
-    margin: 10px 0 10px 0;
+    margin: 20px 0 16px 0;
+    width: 70%;
 }
 .form-text {
-    margin: 10px 0 10px 0;
+    margin: 10px 0 20px 0;
+    width: 70%;
+
 }
 .send {
     width: 120px;

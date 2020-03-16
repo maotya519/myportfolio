@@ -5,22 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="stylesheet" href="./styles.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <h1 class="head-title">MyPortfolio</h1>
-        <i class="material-icons menu openmenu">list</i>
-    </header>
-        <nav>
-            <i class="material-icons menu closemenu">close</i>
-            <li><a href="#"></a>Menu1</li>
-            <li><a href="#"></a>Menu2</li>
-            <li><a href="#"></a>Menu3</li>
-            <li><a href="#"></a>Menu4</li>
-        </nav>
-    <main>
+    <!-- サイドオープン時メインコンテンツを覆う -->
+    <div class="overlay" id="js__overlay"></div>
+    <!-- サイドメニュー -->
+    <nav class="side-menu">
+      <ul>
+        <li><a href="#" class="menu-link">ブログ</a></li>
+        <li><a href="#" class="menu-link">ブログ</a></li>
+        <li><a href="#" class="menu-link">ブログ</a></li>
+      </ul>
+    </nav>
+
+    <!-- 開閉用ボタン -->
+    <div class="side-menu-btn" id="js__sideMenuBtn"></div>
+
+    <!-- メインコンテンツ -->
+    <div class="wrapper">
+        <header>
+            <h1 class="head-title">MyPortfolio</h1>
+            <i class="material-icons menu side-menu-btn" id="js__sideMenuBtn">list</i>
+        </header>
+
         <section class="user-container">
             <img src="./profile.jpg" class="backimage">
             <img src="./usericon.jpeg" class="usericon">
@@ -177,12 +186,13 @@
                 <label class="form-tag">Your email※</label><br>
                 <input type="email" class="form-email" placeholder="example@sample.com"><br>
                 <label class="form-tag form-tx">Your message※</label>
-                <textarea class="form-text" cols="28" rows="8"></textarea><br>
+                <textarea class="form-text" cols="28" rows="10"></textarea><br>
                 <input type="submit" value="Send" class="send">
             </form>
         </section>
-    </main>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="./index.js"></script>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
