@@ -1,0 +1,122 @@
+
+/* デフォルト（480px 未満）
+   デバイスで共通で利用するスタイル
+   スマートフォンに最適化したレイアウト
+  */
+  body { font-size: 14px; }
+    header {
+        box-shadow: 0 4px 6px rgb(63, 158, 202);
+        height: 64px;
+    }
+    .head-title {
+        line-height: 60px;
+        letter-spacing: 0.8;
+    }
+    .overlay::after { top: 40%; }
+    .side-menu {
+        top: 30%;
+        right: 25%;
+    }
+    .menu-link { font-size: 16px;}
+    li { padding: 20px 0; }
+    .side-menu-btn {
+        top: 10px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        font-size: 36px;
+    }
+    .side-open .wrapper,
+    .side-open .overlay {
+      -webkit-transform: translate3d(-300px, 0, 0);
+      transform: translate3d(-300px, 0, 0);
+    }
+    .user-container {
+        width: 90%;
+        height: 680px;
+        margin: 36px auto;
+        border-radius: 4px;
+        box-shadow: 0 6px 6px rgb(63, 158, 202);
+}
+.backimage { height: 180px; }
+.usericon {
+    width: 120px;
+    height: 115px;
+    left:34%;
+    top: 9%;
+    border: 2px solid #333
+}
+.information {font-size: 18px; }
+.user-information { margin: 42px 0 0 20px; }
+.fab { font-size: 36px; }
+.tag { margin: 2px 0 2px 0; }
+.repository-area { margin: 10px 0 0 0; }
+.career-area {
+    height: 100px;
+    border: 2px solid #333;
+    margin: 20px auto 0 0;
+    border-radius: 6px;
+    width: 94%;
+}
+.vision-area {
+    height: 100px;
+    border: 2px solid #333;
+    margin: 10px auto 0 0;
+    border-radius: 6px;
+    width: 94%
+}
+.c-title { padding: 4px 0 0 4px; }
+.tx { padding: 4px; }
+.skills-container {
+    height: 540px;
+    margin: 36px auto;
+    border-radius: 4px;
+    box-shadow: 0 6px 6px rgb(63, 158, 202);
+}
+.works-container {
+    height: 380px;
+    margin: 36px auto;
+    border-radius: 4px;
+    box-shadow: 0 6px 6px rgb(63, 158, 202);
+}
+.contacts-container {
+    height: 580px;
+    border-radius: 4px;
+}
+.content-title {
+    padding: 30px 0 0 0;
+    font-size: 28px;
+}
+.skill-content-text { padding: 0 16px; }
+.skill-tx { padding: 16px 16px 10px 16px; }
+.border {
+    width: 80%;
+    border: 1px solid rgb(206, 204, 204);
+}
+.form-tag { padding: 0 160px 0 0 ; }
+.form-name {
+    font-size: 18px;
+    margin: 20px 0 16px 0;
+    width: 70%;
+}
+.form-email {
+    font-size: 18px;
+    margin: 20px 0 16px 0;
+    width: 70%;
+}
+.form-text {
+    margin: 10px 0 20px 0;
+    width: 70%;
+}
+.send {
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    margin: 10px 0 0 0;
+    box-shadow: 0 6px 6px #FF6D00;
+}
+@media screen and (min-width : 480px){
+  /* 最小幅 480px 以上の指定 */
+
+}

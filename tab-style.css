@@ -1,0 +1,141 @@
+
+@media screen and (min-width : 768px){
+    /* 最小幅 768px 以上の指定 */
+
+  @media screen and (min-width : 1024px){
+    /* 最小幅 1024px 以上の指定 */
+    header {
+      box-shadow: 0 4px 6px rgb(63, 158, 202);
+      height: 80px;
+  }
+    .head-title {
+      line-height: 80px;
+      letter-spacing: 0.8;
+      font-size: 36px;
+  }
+  .user-container {
+      width: 90%;
+      height: 640px;
+      margin: 64px auto;
+      border-radius: 8px;
+      box-shadow: 0 6px 6px rgb(63, 158, 202);
+  }
+  .backimage {
+      height: 260px;
+  }
+  .usericon {
+      width: 160px;
+      height: 155px;
+      left: 10%;
+      top: 12%;
+      border: 2px solid #333
+  }
+  .user-information {
+      margin: 42px 0 0 20px;
+      display: flex;
+   }
+   .information {
+       font-size: 28px; }
+  .user-information {
+      margin: 64px 0 0 20px;
+  }
+  .fab { font-size: 36px; }
+  .tag {
+      margin: 2px 0 2px 0;
+      font-size: 22px;
+   }
+  .repository-area { margin: 10px 0 0 0; }
+  .career-area {
+      height: 100px;
+      border: 3px solid #333;
+      margin: 32px auto 20px auto;
+      border-radius: 6px;
+  }
+  .vision-area {
+      height: 100px;
+      border: 3px solid #333;
+      margin: 10px auto 0 auto;
+      border-radius: 6px;
+  }
+  .c-title {
+      padding: 4px 0 0 4px;
+      font-size: 16px; }
+  .tx {
+      padding: 8px;
+      font-size: 18px;}
+      .overlay::after { top: 40%; }
+      .side-menu {
+          top: 30%;
+          right: 25%;
+      }
+      .menu-link { font-size: 16px;}
+      li { padding: 20px 0; }
+      .side-menu-btn {
+          top: 10px;
+          right: 20px;
+          width: 40px;
+          height: 40px;
+          padding: 5px;
+          font-size: 36px;
+      }
+      .skills-container {
+          height: 540px;
+          margin: 36px auto;
+          border-radius: 4px;
+          box-shadow: 0 6px 6px rgb(63, 158, 202);
+      }
+      .works-container {
+          height: 380px;
+          margin: 36px auto;
+          border-radius: 4px;
+          box-shadow: 0 6px 6px rgb(63, 158, 202);
+      }
+      .contacts-container {
+          height: 840px;
+          border-radius: 4px;
+
+      }
+      .content-title {
+          padding: 30px 0 0 0;
+          font-size: 36px;
+      }
+      .skill-content-text { padding: 0 16px; }
+      .skill-tx { padding: 16px 16px 10px 16px; }
+      .border {
+          width: 80%;
+          border: 1px solid rgb(206, 204, 204);
+      }
+      .form-tag {
+          padding: 0 540px 120px 0 ;
+          font-size: 28px;
+       }
+      .form-name {
+          font-size: 24px;
+          margin: 20px 0 32px 0;
+          width: 70%;
+          border: 1px solid #333;
+      }
+      .form-email {
+          font-size: 24px;
+          margin: 20px 0 32px 0;
+          width: 70%;
+          border: 1px solid #333;
+      }
+      .form-text {
+          margin: 10px 0 32px 0;
+          width: 70%;
+          font-size: 24px;
+          border: 1px solid #333;
+      }
+
+      .send {
+          width: 240px;
+          height: 60px;
+          font-size: 32px;
+          margin: 10px 0 0 0;
+          box-shadow: 0 8px px #FF6D00;
+      }
+
+  }
+
+  }

@@ -1,0 +1,137 @@
+
+@charset "utf-8";
+/* common */
+body {
+    margin: 0;
+    font-family: Charter;
+    color: #333;
+    background: #B3E5FC;
+}
+header {
+    background: #4FC3F7;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+.head-title {
+    margin: 0;
+    text-align: center;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+a { text-decoration: none; }
+.overlay {
+    content: '';
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    z-index: 3;
+  }
+
+  .overlay::after {
+    visibility: hidden;
+    position: fixed;
+    left: 0;
+    display: block;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+  .side-open .overlay {
+    visibility: visible;
+    cursor: pointer;
+    background: rgba(0,0,0,.7);
+  }
+  .side-open .overlay::after {
+    visibility: visible;
+    color: rgba(255,255,255,.8);
+  }
+
+
+.side-menu {
+    position: fixed;
+    height: 100%;
+    z-index: 1;
+    display: none;
+}
+.menu-link { color: #333; }
+.side-menu-btn {
+    position: fixed;
+    cursor: pointer;
+    z-index: 4;
+    color: #FF6D00;
+}
+
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    z-index: 2;
+  }
+
+.backimage { width: 100%; }
+  .user-container { background: #E1F5FE; }
+  .usericon {
+    border-radius: 50%;
+    position: absolute;
+}
+.information {font-weight: bold;}
+p { margin: 0; }
+
+.fa-github {
+    color: #333;
+
+}
+
+.fa-github {
+    margin: 0 10px 0 0;
+}
+.fa-gitlab { color: #FF6D00; }
+.career-area {
+    width: 90%;
+}
+.vision-area {
+    width: 90%;
+}
+.c-title {
+    font-weight: bold;
+}
+.tx {
+    text-align: left;
+}
+.skills-container {
+    width: 90%;
+    background: #E1F5FE;
+}
+.works-container {
+    width: 90%;
+    background: #E1F5FE;
+}
+.contacts-container {
+    width: 98%;
+    background: #E1F5FE;
+    width: 100%;
+}
+.content-title {
+    text-align: center;
+}
+.skill-content-text {
+    margin: 0;
+}
+.send {
+    background:#FF9100;
+    color: #ddd;
+    border: none;
+}
+form { text-align: center; }

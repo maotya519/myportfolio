@@ -5,173 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./smart-style.css">
+    <link rel="stylesheet" href="./tab-style.css">
+    <link rel="stylesheet" href="./pc-style.css">
     <title>Document</title>
 </head>
 <body>
-    <!-- サイドオープン時メインコンテンツを覆う -->
     <div class="overlay" id="js__overlay"></div>
-    <!-- サイドメニュー -->
-    <nav class="side-menu">
-      <ul>
-        <li><a href="#" class="menu-link">ブログ</a></li>
-        <li><a href="#" class="menu-link">ブログ</a></li>
-        <li><a href="#" class="menu-link">ブログ</a></li>
-      </ul>
-    </nav>
-
-    <!-- 開閉用ボタン -->
+        <nav class="side-menu">
+            <ul>
+            <li><a href="#" class="menu-link">ブログ</a></li>
+            <li><a href="#" class="menu-link">ブログ</a></li>
+            <li><a href="#" class="menu-link">ブログ</a></li>
+        </ul>
+        </nav>
     <div class="side-menu-btn" id="js__sideMenuBtn"></div>
-
-    <!-- メインコンテンツ -->
     <div class="wrapper">
         <header>
             <h1 class="head-title">MyPortfolio</h1>
-            <i class="material-icons menu side-menu-btn" id="js__sideMenuBtn">list</i>
+            <i class="material-icons side-menu-btn" id="js__sideMenuBtn">list</i>
         </header>
 
         <section class="user-container">
             <img src="./profile.jpg" class="backimage">
             <img src="./usericon.jpeg" class="usericon">
             <section class="user-information">
-                <p class="name-tag tag">Name:</p>
-                <p class="name information">Mao Tsunoda</p>
-                <p class="age-tag tag">Age:</p>
-                <p class="age information">1998/05/19</p>
-                <p class="proffesion-tag tag">Proffesion:</p>
-                <p class="proffesion information">College student</p>
-                <p class="repository-tag tag">Repository:</p>
-                <div class="repository-area">
-                    <a href="#"><i class="fab fa-github github"></i></a>
-                    <a href="#"><i class="fab fa-gitlab gitlub"></i></a>
+                <div class="left-content">
+                    <p class="tag">Name:</p>
+                    <p class="name information">角田　真雄</p>
+                    <p class="tag">Age:</p>
+                    <p class="age information">1998/05/19</p>
+                    <p class="tag">Proffesion:</p>
+                    <p class="proffesion information">Univ Stdt</p>
+                    <p class="tag">Repository:</p>
+                    <div class="repository-area">
+                        <a href="#"><i class="fab fa-github" ></i></a>
+                        <a href="#"><i class="fab fa-gitlab"></i></a>
+                    </div>
+                </div>
+                <div class="right-content">
+                    <div class="career-area">
+                        <p class="career-title c-title">Career:</p>
+                        <p class="career-text tx">
+                            ここにテキストが入ります。ここにテキストが入ります。
+                            ここにテキストが入ります。ここにテキストが入ります。
+                        </p>
+                    </div>
+                    <div class="vision-area">
+                        <p class="vision-title c-title">Vision:</p>
+                        <p class="vision-text tx">
+                            ここにテキストが入ります。ここにテキストが入ります。
+                            ここにテキストが入ります。ここにテキストが入ります。
+                        </p>
+                    </div>
                 </div>
             </section>
-                <div class="career-area">
-                    <p class="career-title c-title">Career:</p>
-                    <p class="career-text tx">
-                        ここにテキストが入ります。ここにテキストが入ります。
-                        ここにテキストが入ります。ここにテキストが入ります。
-                    </p>
-                </div>
-                <div class="vision-area">
-                    <p class="vision-title c-title">Vision:</p>
-                    <p class="vision-text tx">
-                        ここにテキストが入ります。ここにテキストが入ります。
-                        ここにテキストが入ります。ここにテキストが入ります。
-                    </p>
-                </div>
+
         </section>
 
         <hr class="border">
 
         <section class="skills-container">
-            <h2 class="skills-title">MySkills</h2>
-            <div class="frontend-area">
-                <i class="fas fa-caret-down frontend-down"></i>
-                <p class="frontend-title">Frontend</p>
-            </div>
-            <div class="frontend-slide">
-                <div class="html-css-area">
-                    <img src="./hoge.png" class="skill-icon">
-                    <p class="skill-tx">
-                        ここにテキストが入ります。ここにテキストが入ります。
-                        ここにテキストが入ります。ここにテキストが入りま
-                    </p>
-                </div>
-                <hr class="border">
-                <div class="html-css-area">
-                    <img src="./hoge.png" class="skill-icon">
-                    <p class="skill-tx">
-                        ここにテキストが入ります。ここにテキストが入ります。
-                        ここにテキストが入ります。ここにテキストが入りま
-                    </p>
-                </div>
-                <hr class="border">
-                <div class="html-css-area">
-                    <img src="./hoge.png" class="skill-icon">
-                    <p class="skill-tx">
-                        ここにテキストが入ります。ここにテキストが入ります。
-                        ここにテキストが入ります。ここにテキストが入りま
-                    </p>
-                </div>
-                <hr class="border">
-            </div>
-            <div class="backend-area">
-                <i class="fas fa-caret-down backend-down"></i>
-                <p class="backend-title">Backend</p>
-            </div>
-            <div class="backend-slide">
-                <div class="html-css-area">
-                    <img src="./hoge.png" class="skill-icon">
-                    <p class="skill-tx">
-                        ここにテキストが入ります。ここにテキストが入ります。
-                        ここにテキストが入ります。ここにテキストが入りま
-                    </p>
-                </div>
-                <hr class="border">
-                <div class="html-css-area">
-                    <img src="./hoge.png" class="skill-icon">
-                    <p class="skill-tx">
-                        ここにテキストが入ります。ここにテキストが入ります。
-                        ここにテキストが入ります。ここにテキストが入りま
-                    </p>
-                </div>
-                <hr class="border">
-                <div class="html-css-area">
-                    <img src="./hoge.png" class="skill-icon">
-                    <p class="skill-tx">
-                        ここにテキストが入ります。ここにテキストが入ります。
-                        ここにテキストが入ります。ここにテキストが入りま
-                    </p>
-                </div>
-                <hr class="border">
-            </div>
-            <div class="version-area">
-                <i class="fas fa-caret-down version-down"></i>
-                <p class="version-title">Version Control</p>
-            </div>
-            <div class="version-slide">
-                <div class="html-css-area">
-                    <img src="./hoge.png" class="skill-icon">
-                    <p class="skill-tx">
-                        ここにテキストが入ります。ここにテキストが入ります。
-                        ここにテキストが入ります。ここにテキストが入りま
-                    </p>
-                </div>
-                <hr class="border">
-                <div class="html-css-area">
-                    <img src="./hoge.png" class="skill-icon">
-                    <p class="skill-tx">
-                        ここにテキストが入ります。ここにテキストが入ります。
-                        ここにテキストが入ります。ここにテキストが入りま
-                    </p>
-                </div>
-                <hr class="border">
-            </div>
-            <div class="others-area">
-                <i class="fas fa-caret-down others-down"></i>
-                <p class="others-title">Others</p>
-            </div>
-            <div class="others-slide">
-                <div class="html-css-area">
-                    <img src="./hoge.png" class="skill-icon">
-                    <p class="skill-tx">
-                        ここにテキストが入ります。ここにテキストが入ります。
-                        ここにテキストが入ります。ここにテキストが入りま
-                    </p>
-                </div>
-                <hr class="border">
-                <div class="html-css-area">
-                    <img src="./hoge.png" class="skill-icon">
-                    <p class="skill-tx">
-                        ここにテキストが入ります。ここにテキストが入ります。
-                        ここにテキストが入ります。ここにテキストが入りま
-                    </p>
-                </div>
-                <hr class="border">
+            <h2 class="content-title">MySkills</h2>
+
         </section>
         <hr class="border">
-        <h3 class="contacts-title">Works</h3>
+        <h3 class="content-title">Works</h3>
         <section class="works-container">
 
         </section>
@@ -179,13 +79,13 @@
         <hr class="border">
 
         <section class="contacts-container ">
-            <h3 class="contacts-title">Contacts</h3>
+            <h3 class="content-title">Contacts</h3>
             <form>
                 <label class="form-tag">Your name※</label><br>
                 <input type="text" class="form-name"><br>
                 <label class="form-tag">Your email※</label><br>
                 <input type="email" class="form-email" placeholder="example@sample.com"><br>
-                <label class="form-tag form-tx">Your message※</label>
+                <label class="form-tag form-tx message">Your message※</label>
                 <textarea class="form-text" cols="28" rows="10"></textarea><br>
                 <input type="submit" value="Send" class="send">
             </form>
@@ -193,6 +93,5 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="./index.js"></script>
-    <script src="./script.js"></script>
   </body>
 </html>
